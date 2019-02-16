@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">GPA_10801160_Calculator</string>
+    <string name="T_V_course1">Course 1:</string>
+    <string name="T_V_course2">Course 2:</string>
+    <string name="T_V_course3">Course 3:</string>
+    <string name="T_V_course4">Course 4:</string>
+    <string name="T_V_course5">Course 5:</string>
+    <string name="T_V_gpa">GPA:</string>
+    <string name="T_V_result">Result:</string>
+
+    <string name="T_F_course">Add Grade</string>
+    <string name="doMath">Compute GPA</string>
+</resources>
