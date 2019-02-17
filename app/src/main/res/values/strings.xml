@@ -6,8 +6,12 @@
     <string name="T_V_course4">Course 4:</string>
     <string name="T_V_course5">Course 5:</string>
     <string name="T_V_gpa">GPA:</string>
-    <string name="T_V_result">Result:</string>
+    <string name="T_V_result">#</string>
+    <string name="T_F_credit">Credit #</string>
+
 
     <string name="T_F_course">Add Grade</string>
     <string name="doMath">Compute GPA</string>
+    <string name="clear">Clear</string>
+    <string name="error_field_required">This field is required</string>
 </resources>

@@ -1,187 +1,169 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<TableLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:layout_gravity="center">
-
-    <TableLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:stretchColumns="1,2"
-        tools:context=".MainActivity">
-
-        <TableRow>
-            <TextView
-                android:layout_column="1"
-                android:text="@string/T_V_course1"
-                android:layout_gravity="center"
-                android:padding="3dip"
-                android:textSize="18sp"/>
-            <EditText
-                android:layout_column="2"
-                android:hint="@string/T_F_course"
-                android:gravity="center"
-                android:padding="3dip"
-                android:importantForAutofill="no"
-                android:inputType="numberDecimal" />
-        </TableRow>
-
-        <TableRow>
-            <TextView
-                android:layout_column="1"
-                android:text="@string/T_V_course2"
-                android:layout_gravity="center"
-                android:padding="3dip"
-                android:textSize="18sp"/>
-            <EditText
-                android:layout_column="2"
-                android:hint="@string/T_F_course"
-                android:gravity="center"
-                android:padding="3dip"
-                android:importantForAutofill="no"
-                android:inputType="numberDecimal"/>
-        </TableRow>
-
-        <TableRow>
-            <TextView
-                android:layout_column="1"
-                android:text="@string/T_V_course3"
-                android:layout_gravity="center"
-                android:padding="3dip"
-                android:textSize="18sp"/>
-            <EditText
-                android:layout_column="2"
-                android:hint="@string/T_F_course"
-                android:gravity="center"
-                android:padding="3dip"
-                android:importantForAutofill="no"
-                android:inputType="numberDecimal"/>
-        </TableRow>
-
-        <TableRow>
-            <TextView
-                android:layout_column="1"
-                android:text="@string/T_V_course4"
-                android:layout_gravity="center"
-                android:padding="3dip"
-                android:textSize="18sp"/>
-            <EditText
-                android:layout_column="2"
-                android:hint="@string/T_F_course"
-                android:gravity="center"
-                android:padding="3dip"
-                android:importantForAutofill="no"
-                android:inputType="numberDecimal"/>
-        </TableRow>
-
-        <TableRow>
-            <TextView
-                android:layout_column="1"
-                android:text="@string/T_V_course5"
-                android:layout_gravity="center"
-                android:padding="3dip"
-                android:textSize="18sp"/>
-            <EditText
-                android:layout_column="2"
-                android:hint="@string/T_F_course"
-                android:gravity="center"
-                android:padding="3dip"
-                android:importantForAutofill="no"
-                android:inputType="numberDecimal"/>
-        </TableRow>
-
-        <TableRow>
-            <TextView
-                android:layout_column="1"
-                android:text="@string/T_V_gpa"
-                android:layout_gravity="right"
-                android:padding="3dip"
-                android:textSize="18sp"/>
-            <TextView
-                android:layout_column="1"
-                android:text="@string/T_V_result"
-                android:layout_gravity="left"
-                android:padding="3dip"
-                android:textSize="18sp"/>
-        </TableRow>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center">
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/doMath" />
-        </LinearLayout>
-    </TableLayout>
-</LinearLayout>
-
-<!--
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp"
-    android:background="@color/white"
+    android:stretchColumns="1,2,3"
     tools:context=".MainActivity">
-    <ScrollView
+
+    <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="@string/T_V_course1"
+            android:layout_gravity="center"
+            android:padding="15dip"
+            android:textSize="18sp"/>
+        <EditText
+            android:id="@+id/E_T_grade1"
+            android:layout_column="2"
+            android:hint="@string/T_F_course"
+            android:gravity="center"
+            android:padding="15dip"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal" />
+        <EditText
+            android:id="@+id/E_T_credit1"
+            android:layout_column="3"
+            android:hint="@string/T_F_credit"
+            android:gravity="center"
+            android:padding="15dip"
+            android:importantForAutofill="no"
+            android:inputType="number" />
+
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="@string/T_V_course2"
+            android:layout_gravity="center"
+            android:padding="15dip"
+            android:textSize="18sp"/>
+        <EditText
+            android:id="@+id/E_T_grade2"
+            android:layout_column="2"
+            android:hint="@string/T_F_course"
+            android:gravity="center"
+            android:padding="15dip"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal"/>
+        <EditText
+            android:id="@+id/E_T_credit2"
+            android:layout_column="3"
+            android:hint="@string/T_F_credit"
+            android:gravity="center"
+            android:padding="15dip"
+            android:importantForAutofill="no"
+            android:inputType="number" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="@string/T_V_course3"
+            android:layout_gravity="center"
+            android:padding="15dip"
+            android:textSize="18sp"/>
+        <EditText
+            android:id="@+id/E_T_grade3"
+            android:layout_column="2"
+            android:hint="@string/T_F_course"
+            android:gravity="center"
+            android:padding="15dip"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal"/>
+        <EditText
+            android:id="@+id/E_T_credit3"
+            android:layout_column="3"
+            android:hint="@string/T_F_credit"
+            android:gravity="center"
+            android:padding="15dip"
+            android:importantForAutofill="no"
+            android:inputType="number" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="@string/T_V_course4"
+            android:layout_gravity="center"
+            android:padding="15dip"
+            android:textSize="18sp"/>
+        <EditText
+            android:id="@+id/E_T_grade4"
+            android:layout_column="2"
+            android:hint="@string/T_F_course"
+            android:gravity="center"
+            android:padding="15dip"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal"/>
+        <EditText
+            android:id="@+id/E_T_credit4"
+            android:layout_column="3"
+            android:hint="@string/T_F_credit"
+            android:gravity="center"
+            android:padding="15dip"
+            android:importantForAutofill="no"
+            android:inputType="number" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="@string/T_V_course5"
+            android:layout_gravity="center"
+            android:padding="15dip"
+            android:textSize="18sp"/>
+        <EditText
+            android:id="@+id/E_T_grade5"
+            android:layout_column="2"
+            android:hint="@string/T_F_course"
+            android:gravity="center"
+            android:padding="15dip"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal"/>
+        <EditText
+            android:id="@+id/E_T_credit5"
+            android:layout_column="3"
+            android:hint="@string/T_F_credit"
+            android:gravity="center"
+            android:padding="15dip"
+            android:importantForAutofill="no"
+            android:inputType="number" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="@string/T_V_gpa"
+            android:layout_gravity="center"
+            android:padding="3dip"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/T_V_gpaValue"
+            android:layout_column="2"
+            android:layout_gravity="center"
+            android:padding="3dip"
+            android:text="@string/T_V_result"
+            android:textSize="18sp" />
+    </TableRow>
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <LinearLayout
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/doMathBut"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="8dp"
-                android:text="@string/T_V_course1"
-                android:maxLines="1"
-                android:singleLine="true" />
+            android:text="@string/doMath" />
+    </LinearLayout>
+</TableLayout>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="8dp"
-                android:text="@string/T_V_course2"
-                android:maxLines="1"
-                android:singleLine="true" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="8dp"
-                android:text="@string/T_V_course3"
-                android:maxLines="1"
-                android:singleLine="true" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="8dp"
-                android:text="@string/T_V_course4"
-                android:maxLines="1"
-                android:singleLine="true" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="8dp"
-                android:text="@string/T_V_course5"
-                android:maxLines="1"
-                android:singleLine="true" />
-        </LinearLayout>
-    </ScrollView>
-</LinearLayout>
+<!--
 -->
